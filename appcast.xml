@@ -5,6 +5,23 @@
         <link>https://github.com/conquerdesigngroup/shutr-lab</link>
         <description>SHUTR LAB application updates</description>
         <language>en</language>
-        <!-- Each release adds an <item> here. See README for the format. -->
+        <item>
+            <title>Version 0.1.2</title>
+            <pubDate>Wed, 29 Apr 2026 20:54:47 +0000</pubDate>
+            <sparkle:version>3</sparkle:version>
+            <sparkle:shortVersionString>0.1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                    <li>First Sparkle-enabled release — auto-update flow live.</li>
+                    <li>New <strong>Check for Updates</strong> button at the bottom of the app.</li>
+                    <li>Recital folder workflow: stations, editable categories, group/individuals split.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v0.1.2/SHUTR-LAB-0.1.2.dmg"
+                sparkle:edSignature="5AX5IoWgwk/RmaqbwwqQ3KKLrDlgSEK91QqwNvCYUwqIwDHBBgHdbWINX8q1GUi/QJWlehS6bTf0+JXT1X/BBg==" length="4149863"
+                type="application/octet-stream" />
+        </item>
     </channel>
 </rss>
