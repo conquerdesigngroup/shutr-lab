@@ -1,0 +1,10 @@
+<?xml version="1.0" standalone="yes"?>
+<rss xmlns:sparkle="http://www.andymatuschak.org/xml-namespaces/sparkle" xmlns:dc="http://purl.org/dc/elements/1.1/" version="2.0">
+    <channel>
+        <title>SHUTR LAB</title>
+        <link>https://github.com/conquerdesigngroup/shutr-lab</link>
+        <description>SHUTR LAB application updates</description>
+        <language>en</language>
+        <!-- Each release adds an <item> here. See README for the format. -->
+    </channel>
+</rss>
