@@ -6,6 +6,30 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 0.1.5</title>
+            <pubDate>Fri, 01 May 2026 05:44:34 +0000</pubDate>
+            <sparkle:version>6</sparkle:version>
+            <sparkle:shortVersionString>0.1.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                    <li><strong>Save target selector</strong> in the folder sidebar — Mac, Card, or Both.</li>
+                    <li><strong>Filename template</strong> now visible in the sidebar with quick token toggles and live preview.</li>
+                    <li><strong>Dedicated exposure strip</strong> (MODE / TV / AV / ISO / ±EV) above the preview pane.</li>
+                    <li><strong>Capture flash</strong> on the preview when the shutter fires — confirms a shot landed even with sound off.</li>
+                    <li><strong>Composition grid overlay</strong>: Off / Rule of Thirds / 4×4. Toggle from the settings panel or with ⌘'.</li>
+                    <li><strong>Client Display window</strong> (⇧⌘D) — full-bleed view of the latest shot for a second monitor.</li>
+                    <li><strong>Capture history scrubbing</strong>: ⌘← / ⌘→ steps through past shots; ⌘R reveals the selected shot in Finder.</li>
+                    <li><strong>Connection-error banner</strong> with one-click Restart Helper / Reconnect actions and a plain-English explanation of the macOS PTP daemon issue.</li>
+                    <li>First-run sheet that walks you through the macOS Image Capture preference that prevents the system from grabbing the camera.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v0.1.5/SHUTR-LAB-0.1.5.dmg"
+                sparkle:edSignature="smD73GJpRJtRTcbbx+kRBHO+RZ63mCSx7EOCF09HCWPjRaIZLm1onCN0dgvmHgvmZA810Z5H1uOfVJbRc+FcCA==" length="4279952"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 0.1.4</title>
             <pubDate>Thu, 30 Apr 2026 00:51:58 +0000</pubDate>
             <sparkle:version>5</sparkle:version>
