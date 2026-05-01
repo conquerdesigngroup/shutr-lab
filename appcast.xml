@@ -6,6 +6,29 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 0.1.6</title>
+            <pubDate>Fri, 01 May 2026 17:37:20 +0000</pubDate>
+            <sparkle:version>7</sparkle:version>
+            <sparkle:shortVersionString>0.1.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <ul>
+                    <li><strong>Capture sound and Reveal-on-Capture toggles now actually work</strong> — these settings existed in 0.1.5 but were silently dead.</li>
+                    <li><strong>Card-only mode preview fixed</strong> — switching to Card-only after shooting to Mac no longer leaves a stale Mac shot in the preview pane.</li>
+                    <li><strong>Restart Helper</strong> button on the connection-error screen, with a "Why does this happen?" explanation of the macOS PTP daemon issue.</li>
+                    <li>Grid / Flash / Client View redesigned as distinct pill-style buttons with a "VIEW" section header — visually separates app-side overlays from camera settings.</li>
+                    <li>Grid overlay no longer extends past the image into the black letterbox.</li>
+                    <li>Client Display window auto-fades the filename badge when opened mid-shoot, and properly cleans up its timer when closed.</li>
+                    <li>Thumbnail strip prunes deleted-in-Finder files automatically; double-tap to reveal no longer also fires single-tap selection.</li>
+                    <li>Settings: visual-flash toggle and "Show again" button to reopen the first-run setup guide.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v0.1.6/SHUTR-LAB-0.1.6.dmg"
+                sparkle:edSignature="1s6vZVIVpslQb7vXCpaxos2qRoLD5KeuhNqzAXthCK4wAG2AVPX4rh0BFMdMrM/GPXRhWmTtyRDBw0stKfoXBg==" length="4286373"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 0.1.5</title>
             <pubDate>Fri, 01 May 2026 05:44:34 +0000</pubDate>
             <sparkle:version>6</sparkle:version>
