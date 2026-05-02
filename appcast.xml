@@ -6,6 +6,35 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 0.1.7</title>
+            <pubDate>Sat, 02 May 2026 19:05:25 +0000</pubDate>
+            <sparkle:version>8</sparkle:version>
+            <sparkle:shortVersionString>0.1.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <p><strong>Built for long studio sessions — 6,000+ shots in an afternoon.</strong></p>
+                <ul>
+                    <li><strong>Native macOS Finder color tags</strong> replace the star rating system. Press 1–7 (or click the colored dots in the shot toolbar) to apply Red / Orange / Yellow / Green / Blue / Purple / Gray. Tags are written directly to each photo file — open Finder after the shoot, sort by color, edit only the tagged ones.</li>
+                    <li><strong>One-time migration</strong> converts existing star ratings to color tags automatically.</li>
+                    <li><strong>⌘L Quick Subject Switcher</strong>: Spotlight-style fuzzy search across every station, subject, group, and member. Built for 100+ groups with hundreds of members.</li>
+                    <li><strong>Drill-down navigation</strong> in the folder sidebar — tapping a group collapses the rest of the list, surfacing GROUP / INDIVIDUALS / MEMBERS right under the active subject.</li>
+                    <li><strong>⌘N Next Subject</strong>: pre-filled sheet, type name, hit Return — folder created and switched.</li>
+                    <li><strong>⇧⌘I Roster Import</strong>: paste a list of names (or load CSV), bulk-create the day's subject folders before the first kid walks in.</li>
+                    <li><strong>⇧⌘P Contact Sheet PDF</strong>: streaming page generator with cover, configurable grid (3×3 → 6×8), filenames, tag color dots, timestamps, and per-color filtering.</li>
+                    <li><strong>⇧⌘O Open Existing Folder</strong>: scan a pre-built folder tree and adopt it as a job — auto-detects stations, categories, and group-style structure.</li>
+                    <li><strong>Camera settings consolidated</strong> into the top bar (MODE/TV/AV/ISO/±EV on row 1, WB/STYLE/METER/DRIVE/QUALITY on row 2). Side dock is now a compact grid of square view-tool buttons.</li>
+                    <li><strong>Battery + card-space chips</strong> next to the camera status pill, color-coded thresholds, polled every 30s and after every capture.</li>
+                    <li><strong>Thumbnail filmstrip</strong> moved to a horizontal dock under the preview, with auto-scroll to the active shot.</li>
+                    <li><strong>Shot toolbar</strong> with physical buttons for every keyboard shortcut: Prev / Next / Reveal / 7 tag colors / Clear.</li>
+                    <li>Capture history limit raised from 200 to 10,000. Thumbnail rendering uses ImageIO downsampling — never loads a full RAW for a strip cell.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v0.1.7/SHUTR-LAB-0.1.7.dmg"
+                sparkle:edSignature="/y6+o7r+TKoGPvRa+WiL9ym93nmHY+UL+TD0D/STZ+ydJyz2JNiPfUr9zknZsYMO5s9MdU+BUFFiIUX8d+CbDw==" length="4705598"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 0.1.6</title>
             <pubDate>Fri, 01 May 2026 17:37:20 +0000</pubDate>
             <sparkle:version>7</sparkle:version>
