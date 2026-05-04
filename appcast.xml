@@ -6,6 +6,26 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 0.1.10</title>
+            <pubDate>Mon, 04 May 2026 22:35:21 +0000</pubDate>
+            <sparkle:version>11</sparkle:version>
+            <sparkle:shortVersionString>0.1.10</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <p><strong>Fixes intermittent connection failures on the EOS R5 C and other Cinema EOS bodies.</strong></p>
+                <ul>
+                    <li><strong>EdsOpenSession now retries on DEVICE_BUSY</strong> (up to 12 attempts × 500 ms = ~6 seconds of patience). The R5 C in particular returns BUSY for several seconds after USB enumeration while its photo-mode firmware finishes booting — the camera is "alive" to ImageCaptureCore well before it's actually ready to accept a PTP session-open. Older R5 / R6 / R3 bodies open on the first attempt, so this costs them nothing.</li>
+                    <li><strong>UILock around the tethering setup.</strong> Canon's own EDSDK sample brackets bulk property writes with kEdsCameraStatusCommand_UILock / UIUnLock so the camera body's UI thread stops fighting our PTP writes. Without it, SetSaveTo and SetCapacity can silently fail on Cinema EOS bodies whose menu system has more state to race against.</li>
+                    <li><strong>Diagnostic log shortcut.</strong> The connection-error screen now has a "Show Diagnostic Log" button that reveals ~/Library/Logs/SHUTR-Lab/helper.log in Finder — drag it into a support email and the EDSDK call/response chain is right there.</li>
+                    <li><strong>Human-readable EDSDK errors</strong> in the helper log: "DEVICE_BUSY (0x81)" instead of just "0x81". Faster to diagnose unfamiliar codes.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v0.1.10/SHUTR-LAB-0.1.10.dmg"
+                sparkle:edSignature="sdFcPdKpyUDnNWbaNOZJRv9wR1by7K2CwxES7cdXdaCGXJCmNgX5vGDyosjG0A4D7wlVHZ89pY8PFghIvQiNCA==" length="4708318"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 0.1.9</title>
             <pubDate>Mon, 04 May 2026 22:21:29 +0000</pubDate>
             <sparkle:version>10</sparkle:version>
