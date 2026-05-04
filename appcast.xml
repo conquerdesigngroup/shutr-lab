@@ -6,6 +6,28 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 0.1.8</title>
+            <pubDate>Mon, 04 May 2026 22:12:58 +0000</pubDate>
+            <sparkle:version>9</sparkle:version>
+            <sparkle:shortVersionString>0.1.8</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <p><strong>Stability + a tighter UI. Verified on macOS Sequoia 15.7.</strong></p>
+                <ul>
+                    <li><strong>Connection-thrash fix.</strong> When the camera fired repeated sleep/shutdown events the connect screen could flicker between "Connecting" and "Error" indefinitely. Now there's a 2-second cooldown between attempts and a 3-strike failure cap that surfaces a clear "Power-cycle the body or replug the cable, then click Reconnect" message instead of looping. Replugging or clicking Reconnect always clears the backoff.</li>
+                    <li><strong>Slow-wake handshake.</strong> Connect watchdog raised from 12s to 20s so a body waking from sleep doesn't get killed mid-EdsOpenSession.</li>
+                    <li><strong>Shutter button moved up</strong> into the right edge of the top settings strip, between the two rows of camera-property pills. The bottom shutter dock is gone — that's roughly 70-90pt of extra vertical room for the preview and thumbnail strip.</li>
+                    <li><strong>View-tools dock</strong> compressed from a 150pt-wide 2-column grid to a 78pt-wide single column of seven compact squares (Grid, Flash, Client, Next, Roster, Sheet, Find). Preview pane gains ~70pt of horizontal room.</li>
+                    <li><strong>Removed:</strong> the capture sound (and its toggle in Settings); the redundant "Refresh" button in the view-tools dock — settings auto-refresh on every property-change event from the body.</li>
+                    <li><strong>macOS Sequoia 15:</strong> onboarding now mentions the system "Allow new USB accessories to connect" prompt. Cleaned up macOS 15 deprecations (no behavior change).</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v0.1.8/SHUTR-LAB-0.1.8.dmg"
+                sparkle:edSignature="5wAOeMof2LYSCl5AwBMr2qMBcBrHTytBYMPAgwGbskF4YPwXHIb1axpvh2rwNYTlWR7fb1RS8gYXYBZyhsHbCw==" length="4703318"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 0.1.7</title>
             <pubDate>Sat, 02 May 2026 19:05:25 +0000</pubDate>
             <sparkle:version>8</sparkle:version>
