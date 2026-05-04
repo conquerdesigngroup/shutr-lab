@@ -6,6 +6,26 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 0.1.11</title>
+            <pubDate>Mon, 04 May 2026 22:59:52 +0000</pubDate>
+            <sparkle:version>12</sparkle:version>
+            <sparkle:shortVersionString>0.1.11</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <p><strong>Diagnostic + entitlement fixes for the EOS R5 C connection issue.</strong> Targeted at users whose R5 C connects to EOS Utility but hangs in SHUTR LAB.</p>
+                <ul>
+                    <li><strong>Helper subprocess now ships with its own entitlements file.</strong> Until now MMTetherHelper was signed with zero entitlements while the main app had USB / library-validation entitlements. On macOS Sequoia, this mismatch can silently block EdsOpenSession on Cinema EOS bodies even after the main app has been granted Camera and USB access. The helper now mirrors the relevant subset: cs.disable-library-validation, device.usb, cs.allow-dyld-environment-variables.</li>
+                    <li><strong>Step-by-step EDSDK call tracing in the helper log.</strong> Every EdsGetCameraList / EdsGetChildAtIndex / EdsOpenSession call now logs entry, exit, and a named return code. A 20-second gap between two timestamps unambiguously identifies which call hung.</li>
+                    <li><strong>Millisecond timestamps on every helper log line.</strong> Hangs were previously invisible because all the lines looked the same; now [helper 14:35:42.103] tells us cadence at a glance.</li>
+                    <li><strong>Helper start/stop boundaries are logged</strong> with PID — restart cadence (the bridge watchdog kills the helper after 20s of silence) is now obvious in the log.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v0.1.11/SHUTR-LAB-0.1.11.dmg"
+                sparkle:edSignature="oy70jYhaoQw/pDv/u2zjSkn/eJSm2TouyVQyxMTHaMmmFaus+UJeClYI+XWMBa2B+8dNCIkfoBkXW7mD0sZIBw==" length="4711044"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 0.1.10</title>
             <pubDate>Mon, 04 May 2026 22:35:21 +0000</pubDate>
             <sparkle:version>11</sparkle:version>
