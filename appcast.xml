@@ -6,6 +6,30 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 0.1.9</title>
+            <pubDate>Mon, 04 May 2026 22:21:29 +0000</pubDate>
+            <sparkle:version>10</sparkle:version>
+            <sparkle:shortVersionString>0.1.9</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <p><strong>Better support for the Canon EOS R5 C and other Cinema EOS bodies.</strong></p>
+                <ul>
+                    <li>The R5 C has a hardware Photo / Video switch on the bottom of the body. In Video mode it presents itself as a Cinema EOS device and won\u{2019}t appear over USB to tethering software at all — EDSDK simply can\u{2019}t see it. This release surfaces that caveat in three places so users figure it out faster:
+                        <ul>
+                            <li><strong>Connect-error help text</strong> — the \u{201C}Why does this happen?\u{201D} expandable on the connection-error screen now mentions the switch.</li>
+                            <li><strong>First-run onboarding</strong> — step 1 calls out the R5 C explicitly.</li>
+                            <li><strong>Status-badge tooltip</strong> — once a Cinema EOS body connects, hovering the status pill shows a reminder about the mode switch.</li>
+                        </ul>
+                    </li>
+                    <li>The EOS R5 C profile was already in the supported-cameras catalog (USB ID 0x3303) — this release just makes the workflow gotcha discoverable instead of leaving users guessing why nothing happens.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v0.1.9/SHUTR-LAB-0.1.9.dmg"
+                sparkle:edSignature="99yMvFPgzeCYqrdso5n5ZAycMJpM9TN9q3OWAIUlGYmbb6B+wK9M42NXvrvbJuAL+njBxYG0LTYKvG5P6hDJCg==" length="4704877"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 0.1.8</title>
             <pubDate>Mon, 04 May 2026 22:12:58 +0000</pubDate>
             <sparkle:version>9</sparkle:version>
