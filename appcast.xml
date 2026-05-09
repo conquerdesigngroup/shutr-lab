@@ -6,6 +6,42 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 0.1.12</title>
+            <pubDate>Sat, 09 May 2026 04:18:55 +0000</pubDate>
+            <sparkle:version>13</sparkle:version>
+            <sparkle:shortVersionString>0.1.12</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <p><strong>Big folder-panel overhaul focused on real recital-scale jobs (80+ groups, mixed structures, hundreds of dancers).</strong></p>
+                <p><strong>Folder browsing</strong></p>
+                <ul>
+                    <li><strong>Searchable group picker.</strong> The wall of group chips is gone — click the picker, type to filter, hit Return. Type "lyrical aa" to jump to Lyrical AA - Dancing Queen, no more scrolling 80 chips in a narrow column.</li>
+                    <li><strong>Per-station filtering.</strong> The picker now only lists groups that actually exist on disk inside the active station. On Hanford you see Hanford's 24 groups, not the union of every station's 120.</li>
+                    <li><strong>FOLDERS HERE shows whatever's on disk at any drill level.</strong> The old strict GROUP+INDIVIDUALS pattern dead-ended folders that didn't match (singular INDIVIDUAL, dancer subfolders, etc.). Now the sidebar browses the actual filesystem at any depth.</li>
+                    <li><strong>Path breadcrumb pinned at the top.</strong> A new strip under the SHUTR LAB wordmark shows job › station › group › subject. Last segment is accent so the destination reads at studio distance. Click any earlier segment to drill back.</li>
+                    <li><strong>Resizable sidebar.</strong> Drag the seam between the sidebar and the main pane to widen or narrow it. Persisted across launches.</li>
+                </ul>
+                <p><strong>Folder tagging</strong></p>
+                <ul>
+                    <li><strong>Right-click any folder chip → tag with a macOS Finder color.</strong> Tags use the standard xattr system, so they show up in Finder's own tag sidebar / sort order. Tag a dancer green when she's done shooting.</li>
+                    <li><strong>Tag-filtered sidebar.</strong> A row of color dots above the chip list. Click red to hide every chip that's not red-tagged. Click again or click ALL to clear. Active chips stay visible regardless of filter so you don't lose your place.</li>
+                </ul>
+                <p><strong>Capture-day quality-of-life</strong></p>
+                <ul>
+                    <li><strong>Delete from Disk.</strong> Right-click any thumbnail in the filmstrip → Delete from Disk… → confirm. Permanent delete with a Lightroom-style irreversible warning.</li>
+                    <li><strong>Write-queue ring on the shutter.</strong> Thin lime arc fills as captures pile up and drains as files land on disk. Shifts to amber after 3 s of stalled writes — surfaces a wedged helper or full disk before you keep mashing the shutter.</li>
+                    <li><strong>+ Group / + Folder inline add affordances.</strong> Drop the Edit Categories sheet entirely; create groups and dancers right where you'd select them. Validates illegal characters (/, :) and duplicate names instead of silently failing.</li>
+                    <li><strong>Open Folder sheet</strong> for an existing job no longer pushes Open as Job offscreen on big rosters — body scrolls, footer stays pinned.</li>
+                </ul>
+                <p><strong>Naming.</strong> What used to be called "Categories" is now called "Groups" everywhere it's user-visible — closer to the dance-studio language of "the dance group's routine."</p>
+                <p><strong>Under the hood.</strong> 24 unit tests now cover the path-parsing and folder-creation logic, the same layer where every recent sidebar regression has lived. Runs via xcodebuild test before each release.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v0.1.12/SHUTR-LAB-0.1.12.dmg"
+                sparkle:edSignature="wzEAk8il8gCsuKE1ne2uLDj8l3r5OdKPg3JaseCIUcYq2eDMt63AKe1we2mNhMuKLUnVUafSu2JTAXjPPzm/Cw==" length="5165237"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 0.1.11</title>
             <pubDate>Mon, 04 May 2026 22:59:52 +0000</pubDate>
             <sparkle:version>12</sparkle:version>
