@@ -6,6 +6,25 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 1.3</title>
+            <pubDate>Sat, 09 May 2026 05:08:58 +0000</pubDate>
+            <sparkle:version>16</sparkle:version>
+            <sparkle:shortVersionString>1.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <p><strong>Reliable connect with SD card inserted, even after camera shutdown / sleep / unplug.</strong></p>
+                <p>v1.2 mitigated the "<code>ptpcamerad</code> claims the camera before EDSDK can" bug by killing the daemon when EDSDK couldn't see the device. Real-user logs proved that wasn't enough — the daemon respawns within ~500 ms via launchd and reclaims the PTP session before <code>EdsOpenSession</code> can complete, so the session-open call hung for 21+ seconds and the bridge watchdog killed the helper before recovery could fire.</p>
+                <p>v1.3 ships the actual fix: at app launch, SHUTR LAB now writes <code>defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool YES</code> so macOS no longer auto-grabs hot-plugged Canon bodies. The preference persists across launches and reboots. Combined with a one-time <code>killall ptpcamerad imagecaptureext</code> to drop any current claim, EDSDK gets a clean window for both enumeration and session-open from the very first attempt — no more "remove the SD card to reconnect" workaround.</p>
+                <p><strong>Trade-off:</strong> macOS auto-import on plug is also disabled for iPhones / other PTP devices on this Mac. Reversible at any time via Image Capture's lower-left preference, or:</p>
+                <pre>defaults -currentHost write com.apple.ImageCapture disableHotPlug -bool NO</pre>
+                <p>The in-helper killall fallback from v1.2 stays as defense-in-depth.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v1.3/SHUTR-LAB-1.3.dmg"
+                sparkle:edSignature="TJ5CU37FqPzDpYENSkY7qR2Lt3150kcR0K3xRbLpx3SAswQlLvovgIj+S/nuQUKoR3+q2FpWznKW+L7uAnzZAQ==" length="5168373"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.2</title>
             <pubDate>Sat, 09 May 2026 04:39:30 +0000</pubDate>
             <sparkle:version>15</sparkle:version>
