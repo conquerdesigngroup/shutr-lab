@@ -6,6 +6,26 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 1.2</title>
+            <pubDate>Sat, 09 May 2026 04:39:30 +0000</pubDate>
+            <sparkle:version>15</sparkle:version>
+            <sparkle:shortVersionString>1.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <p><strong>Hotfix: camera with SD card full of photos now connects reliably without removing the card.</strong></p>
+                <ul>
+                    <li><strong>Recovers automatically when macOS's <code>ptpcamerad</code> daemon hijacks the USB session.</strong> When an SD card with photos is inserted, the system's photo-import daemon claims the camera before EDSDK can — symptoms were a stuck "transfer files mode" icon on the body and the app spinning forever on connect. The fix detects this state (either <code>EdsGetCameraList</code> returning OK with count=0 across all retries, or <code>EdsOpenSession</code> returning DEVICE_BUSY indefinitely), kills the daemon, waits 1.5 s for it to respawn, and retries. Daemon is launchd-managed and respawns automatically — no other apps are affected.</li>
+                    <li><strong>Both connect failure modes covered.</strong> The fix runs once during initial enumeration and again during session-open, so whether the daemon's blocking the device list or just the PTP session, the camera comes through.</li>
+                    <li>Pulling the SD card is no longer a workaround you have to remember.</li>
+                </ul>
+                <p>Includes everything from 0.1.12: the folder-panel overhaul, group picker with per-station filtering, folder tagging, tag-filtered sidebar, write-queue ring on shutter, resizable sidebar, and inline + Group / + Folder add affordances.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v1.2/SHUTR-LAB-1.2.dmg"
+                sparkle:edSignature="zSuEhN0gp0Eu7Jt6PQny5h3L8dLNbgPmtQ6awzyuk7LfCEUxJbFcFalFf3BkkXctKaNTxOTRchU9BG2j/VYXCg==" length="5166728"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 0.1.12</title>
             <pubDate>Sat, 09 May 2026 04:18:55 +0000</pubDate>
             <sparkle:version>13</sparkle:version>
