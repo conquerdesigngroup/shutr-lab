@@ -6,6 +6,22 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 1.5</title>
+            <pubDate>Tue, 12 May 2026 17:48:21 +0000</pubDate>
+            <sparkle:version>18</sparkle:version>
+            <sparkle:shortVersionString>1.5</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <p><strong>Small visual polish: the SHUTR LAB wordmark in the top toolbar is now optically centered against the chips and buttons beside it.</strong></p>
+                <p>The underlying SVG had uneven empty space above and below the artwork — about 21 SVG units of padding on top and 40 on the bottom — so when SwiftUI centered the image frame, the visible mark drifted upward. v1.5 corrects the asset's <code>viewBox</code> origin so the mark sits at the bar's geometric center.</p>
+                <p>No functional changes from v1.4. If you weren't bothered by the alignment, you'll see nothing different.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v1.5/SHUTR-LAB-1.5.dmg"
+                sparkle:edSignature="WC98SpQ+7TiL0gjrF0LZt7Vcf59e/khdy43dhnUrjkLaoA5IOP2KUkpoZkalcM/Aus9OIlECLKBlNvJSTi8gDA==" length="5170133"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.4</title>
             <pubDate>Sat, 09 May 2026 19:51:49 +0000</pubDate>
             <sparkle:version>17</sparkle:version>
