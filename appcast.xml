@@ -6,6 +6,39 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 1.6</title>
+            <pubDate>Tue, 12 May 2026 21:17:44 +0000</pubDate>
+            <sparkle:version>19</sparkle:version>
+            <sparkle:shortVersionString>1.6</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h3>🆕 Roll Call integration</h3>
+                <p>MMTether can now post each capture to a <a href="https://roll-call-sigma.vercel.app">Roll Call</a> session, so dancers see their photo flip from pending to ✓ on every iPad on the floor in real time — no extra clicks from the photographer.</p>
+                <ul>
+                    <li><strong>Settings → Capture → Roll Call</strong> — opt-in toggle (off by default). When enabled, fill in the session URL + team password from your Roll Call session settings.</li>
+                    <li><strong>Dancer name is derived from your folder convention</strong> — e.g. <code>…/Class 09/INDIVIDUAL/Harper Ko/IMG_0001.NEF</code> → Harper Ko gets marked done.</li>
+                    <li><strong>Group photos are auto-marked too</strong> — shooting into a <code>/GROUP/</code> subfolder flips the class's group photo to ✓.</li>
+                    <li><strong>Class + day disambiguation</strong> — handles dancers who share a name across classes by reading the class number and day (SAT/SUN) from the folder path.</li>
+                    <li><strong>Never blocks capture</strong> — fire-and-forget POST with an 8-second timeout. If Roll Call is down, slow, or misconfigured, captures keep saving locally with zero delay.</li>
+                </ul>
+
+                <h3>🐛 Capture-destination respawn fix</h3>
+                <p>Fixed a long-standing bug where photos could silently start saving to <code>~/Pictures/SHUTR LAB</code> instead of your chosen destination folder. The helper subprocess resets its capture directory to its built-in default on every respawn (watchdog kill, shutdown event, manual disconnect/reconnect), but the app wasn't re-applying your active destination after the reconnect. Now it does — the destination + filename template are cached and re-pushed inside the connect-success path, so any helper recovery preserves where your photos actually land.</p>
+                <p>This affected anyone who shot through a power-cycle, USB reseat, or any event that triggered a helper respawn during a session. From v1.6 forward, the destination follows the helper through the respawn invisibly.</p>
+
+                <h3>✨ Visual polish</h3>
+                <ul>
+                    <li>Top-bar wordmark nudged to its final optical position.</li>
+                </ul>
+
+                <p>No behavior changes if you don't enable Roll Call. Existing tether workflows are unchanged.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v1.6/SHUTR-LAB-1.6.dmg"
+                sparkle:edSignature="gy+klV3PDps0m5WNRURcANZWLzfScyNlKwswsjsdalt1ZpQiLSKEDRRYEdcYsZwaeALOZdOaL0njyqEG/WK5Aw==" length="5196825"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.5</title>
             <pubDate>Tue, 12 May 2026 17:48:21 +0000</pubDate>
             <sparkle:version>18</sparkle:version>
