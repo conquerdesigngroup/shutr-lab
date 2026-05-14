@@ -6,6 +6,41 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 1.7</title>
+            <pubDate>Thu, 14 May 2026 22:23:17 +0000</pubDate>
+            <sparkle:version>20</sparkle:version>
+            <sparkle:shortVersionString>1.7</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h3>🆕 Checklist window</h3>
+                <p>A new free-floating <strong>Checklist</strong> window shows every category, group, and individual destination for the active job with a green check beside anything that already has photos on disk. Designed to be parked on a second monitor or out of the way of the preview so the photographer can glance at "who's left" between groups.</p>
+                <ul>
+                    <li><strong>Toolbar button</strong> next to Tools, or hit <code>⌘⌥K</code>.</li>
+                    <li><strong>Pinned station summary with progress bar</strong> stays at the top while you scroll — overall completion is always visible.</li>
+                    <li><strong>SAT / SUN tabs</strong> when a job has multiple stations.</li>
+                    <li><strong>Resizable + draggable</strong> like Client Display; remembers position and size across launches.</li>
+                    <li><strong>Live updates</strong> — every capture debounces a rescan ~500ms later, so a dancer flips to ✓ within a beat of the shutter release.</li>
+                    <li><strong>Click a row</strong> to drill the sidebar to that destination.</li>
+                </ul>
+
+                <h3>🎯 Thumbnail strip grouped by destination</h3>
+                <p>When you switch between dancers (or any destination folder) during a shoot, the filmstrip now shows the dancer's name above each run of photos and a lime divider between runs that went to different destinations — easier to spot at studio distance which shots belong to whom.</p>
+
+                <h3>🧩 UI polish across the chrome</h3>
+                <ul>
+                    <li><strong>Camera-properties strip</strong> collapsed from two rows to one, reclaiming vertical space for the preview pane. Redundant filename + shot count around the shutter button removed (already shown in the thumbnail strip).</li>
+                    <li><strong>Top breadcrumb</strong> now shows the full drilled-in path including the selected individual's name — no more stopping at the wrapper folder.</li>
+                    <li><strong>Sidebar simplified</strong> — duplicated breadcrumb removed (covered by the top strip) and the unused tag-filter row taken out.</li>
+                </ul>
+
+                <p>No functional changes to camera tethering, capture, or save destinations. All UI-only.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v1.7/SHUTR-LAB-1.7.dmg"
+                sparkle:edSignature="vEctngpQmUu5PZvK2EpopMapLHVby2oUKDTnDuaoR6TpXgZ8CXP+sial1MW8EWiryAUSgibZPA4m0LqBg75hBQ==" length="5298037"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.6</title>
             <pubDate>Tue, 12 May 2026 21:17:44 +0000</pubDate>
             <sparkle:version>19</sparkle:version>
