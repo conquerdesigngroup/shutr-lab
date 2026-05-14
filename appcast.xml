@@ -6,6 +6,25 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 1.7.1</title>
+            <pubDate>Thu, 14 May 2026 22:38:34 +0000</pubDate>
+            <sparkle:version>21</sparkle:version>
+            <sparkle:shortVersionString>1.7.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h3>🐛 Hotfix release</h3>
+                <p>Two follow-ups to v1.7 surfaced in real-user testing:</p>
+                <ul>
+                    <li><strong>Top bar wordmark layout</strong> — the new Checklist button in v1.7 overlapped the centered SHUTR LAB wordmark on narrow windows. Wordmark is now part of the natural toolbar flow with Spacers on either side, so it shifts gracefully as the button clusters grow and never sits underneath a button.</li>
+                    <li><strong>Thumbnail strip reliability</strong> — fixed a race where the cell rendered before the captured file was fully flushed to disk and got stuck on the photo-placeholder icon. Thumbnails are now pre-warmed off the main queue on every capture and the cell is nudged to re-render once the thumbnail is ready. Also added ImageIO failure logging so support can diagnose any remaining edge cases.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v1.7.1/SHUTR-LAB-1.7.1.dmg"
+                sparkle:edSignature="NS2Xb2qVbxf56tbAAGSjvZ8SCUOryzbJ/U4CxJUIOJh8leS0MsCy/JexXN2+pGjP8vImV7Fxo7UFDt4BKN/JCw==" length="5298799"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.7</title>
             <pubDate>Thu, 14 May 2026 22:23:17 +0000</pubDate>
             <sparkle:version>20</sparkle:version>
