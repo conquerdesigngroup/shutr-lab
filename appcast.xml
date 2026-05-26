@@ -6,6 +6,20 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 2.1</title>
+            <pubDate>Tue, 26 May 2026 23:44:08 +0000</pubDate>
+            <sparkle:version>22</sparkle:version>
+            <sparkle:shortVersionString>2.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <p>Checklist window now shows why it's empty when scans fail — the resolved folder path, a specific reason (folder missing, permission denied, wrong folder level, etc.), and a Reveal in Finder button so you can confirm what the app is looking at.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v2.1/SHUTR-LAB-2.1.dmg"
+                sparkle:edSignature="BI00/S6qa5+J9FCXRwpZtIup1fhbSM3ov31/MkeZ+bdM/AxLj06S3L0WCByuCYuOV+fskoyh/K7cADybfjHlBg==" length="5335610"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 1.7.1</title>
             <pubDate>Thu, 14 May 2026 22:38:34 +0000</pubDate>
             <sparkle:version>21</sparkle:version>
