@@ -6,6 +6,22 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 2.3.1</title>
+            <pubDate>Sat, 30 May 2026 18:21:35 +0000</pubDate>
+            <sparkle:version>25</sparkle:version>
+            <sparkle:shortVersionString>2.3.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h3>Diagnostic logging hotfix</h3>
+                <p>If you've experienced "shutter fires but no photo appears" mid-shoot, this build adds the forensic instrumentation needed to root-cause it. No feature or behavior changes — every existing capture path runs exactly as it did in v2.3. The next time the bug occurs, the helper log will tell us exactly which IPC command got stuck and for how long.</p>
+                <p>If you hit it: capture the issue by quitting the app, then sending <code>~/Library/Logs/SHUTR-Lab/helper.log</code> to support.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v2.3.1/SHUTR-LAB-2.3.1.dmg"
+                sparkle:edSignature="H+7l0tzUgWUzXmdOmTszOpyr3clnaGCLTFZLnS8/2534Wnhmy2ibf1BkbArerF8zSEFtGbIxOuonHU5TtAj2Cg==" length="5474100"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.3</title>
             <pubDate>Fri, 29 May 2026 20:06:43 +0000</pubDate>
             <sparkle:version>24</sparkle:version>
