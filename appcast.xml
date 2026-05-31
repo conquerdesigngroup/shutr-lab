@@ -6,6 +6,24 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 2.4.1</title>
+            <pubDate>Sun, 31 May 2026 20:38:11 +0000</pubDate>
+            <sparkle:version>27</sparkle:version>
+            <sparkle:shortVersionString>2.4.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h3>Thumbnail strip fixes</h3>
+                <ul>
+                    <li><strong>⌘⌫</strong> now deletes the selected shot from disk <strong>immediately</strong> — no confirm dialog — for fast culling. (Right-click "Delete from Disk…" still asks first. There's no Trash or undo.)</li>
+                    <li>Fixed <strong>reversed arrow-key navigation</strong>: the strip is newest-on-the-left, so <strong>←</strong> now moves to a newer shot and <strong>→</strong> to an older one.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v2.4.1/SHUTR-LAB-2.4.1.dmg"
+                sparkle:edSignature="I9sQO2d8JyzCtIT8oPtj/9WK0WVFKViY6OYwvImPBaZfaWf717kVB6Ugv4Qyyh7IRarxevXUEHXJwBOfoN/nDw==" length="5682843"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.4.0</title>
             <pubDate>Sun, 31 May 2026 20:14:54 +0000</pubDate>
             <sparkle:version>26</sparkle:version>
