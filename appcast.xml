@@ -6,6 +6,34 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 2.4.0</title>
+            <pubDate>Sun, 31 May 2026 20:14:54 +0000</pubDate>
+            <sparkle:version>26</sparkle:version>
+            <sparkle:shortVersionString>2.4.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h3>Checklist — a major upgrade</h3>
+                <ul>
+                    <li><strong>Folder tags.</strong> Right-click any routine, group, or dancer to tag it with the seven Finder colors. Tag dots show inline in the Checklist and in Finder, and travel with the folder.</li>
+                    <li><strong>Add folders from the Checklist.</strong> Right-click a routine → <em>Add Group…</em> or <em>Add Individual…</em>; right-click a group → <em>Add Individual…</em>. Walk-up dancers no longer need the sidebar.</li>
+                    <li><strong>Collapsible individuals.</strong> Each routine's dancer list folds under an INDIVIDUALS sub-header — collapsed by default, and the routine you're shooting opens automatically.</li>
+                    <li><strong>Filters.</strong> "Remaining only" hides shot subjects and fully-shot routines; tag-color dots filter to flagged folders. Counts stay honest.</li>
+                    <li><strong>Now Shooting bar</strong> showing the active destination, with one-tap jump to the next un-shot subject.</li>
+                    <li><strong>Sticky routine headers</strong> while scrolling, a <strong>compact density</strong> mode, and an at-a-glance day summary (left / routines / %).</li>
+                    <li>Bigger routine titles, cleaner row separators, and note fields that open ready to type.</li>
+                </ul>
+                <h3>Thumbnail strip</h3>
+                <ul>
+                    <li><strong>← / →</strong> to move between shots.</li>
+                    <li><strong>⌘⌫</strong> to delete the selected shot (with confirmation).</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v2.4.0/SHUTR-LAB-2.4.0.dmg"
+                sparkle:edSignature="Sl3G5FAfWHd5aKJYc1KsbXrqH6E5hfm4XDcrd+F/IU0KuLx5B3XAMv7KvFR7LOeX/G6iFOHRMz98585riG5TCA==" length="5682957"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.3.1</title>
             <pubDate>Sat, 30 May 2026 18:21:35 +0000</pubDate>
             <sparkle:version>25</sparkle:version>
