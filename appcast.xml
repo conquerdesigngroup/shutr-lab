@@ -6,6 +6,23 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 2.5.1</title>
+            <pubDate>Sat, 06 Jun 2026 21:42:20 +0000</pubDate>
+            <sparkle:version>29</sparkle:version>
+            <sparkle:shortVersionString>2.5.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h3>Fixes</h3>
+                <ul>
+                    <li><strong>Color-tag a shot from the thumbnail strip's right-click menu</strong> — the seven Finder colors (with checkmarks for what's applied) plus <strong>Clear Tags</strong>, matching the Checklist's tag menu. This is the primary way to tag in <strong>Fullscreen Review</strong>, which has no tag dots. Reveal in Finder and Delete from Disk are still there.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v2.5.1/SHUTR-LAB-2.5.1.dmg"
+                sparkle:edSignature="Cwuyu+BhH6Ud4VGU+TGjmPuD5N7z/7xyDs2zZkhtmydPn5F2kudJHbZwXcRT83JMw1qO256//CUf9J1T0AYiAw==" length="5781282"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.5.0</title>
             <pubDate>Sat, 06 Jun 2026 18:48:16 +0000</pubDate>
             <sparkle:version>28</sparkle:version>
