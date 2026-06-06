@@ -6,6 +6,23 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 2.5.2</title>
+            <pubDate>Sat, 06 Jun 2026 21:56:12 +0000</pubDate>
+            <sparkle:version>30</sparkle:version>
+            <sparkle:shortVersionString>2.5.2</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h3>Changes</h3>
+                <ul>
+                    <li><strong>Hid the camera-settings row</strong> in the top strip (MODE / TV / AV / ISO / ±EV / WB / STYLE / METER / DRIVE / QUALITY). Those values weren't reliably syncing with the camera body and aren't part of the workflow, so they were showing stale/incorrect state. The <strong>shutter button stays in place</strong> and capture is unchanged.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v2.5.2/SHUTR-LAB-2.5.2.dmg"
+                sparkle:edSignature="Nm4EX0fJOD8JAFuPhMlioQNbL2PgpqwuQp0VduRPUoFcBB/SUJpFMIi/VJ+aH49tXeq9XEba6THaZgi6BTLLAw==" length="5782591"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.5.1</title>
             <pubDate>Sat, 06 Jun 2026 21:42:20 +0000</pubDate>
             <sparkle:version>29</sparkle:version>
