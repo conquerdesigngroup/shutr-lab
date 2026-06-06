@@ -6,6 +6,29 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 2.5.0</title>
+            <pubDate>Sat, 06 Jun 2026 18:48:16 +0000</pubDate>
+            <sparkle:version>28</sparkle:version>
+            <sparkle:shortVersionString>2.5.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h3>Fullscreen Review</h3>
+                <p>A distraction-free, true-fullscreen view of the selected shot for reviewing on a tethered laptop.</p>
+                <ul>
+                    <li><strong>Enter</strong> with the <strong>Fullscreen</strong> button in the top bar or <strong>⌃⌘F</strong>; <strong>Esc</strong> or <strong>✕</strong> to exit.</li>
+                    <li><strong>100% loupe</strong> — double-click the photo (or toggle FIT / 100%) to zoom in for a focus check, then <strong>drag to pan</strong> around the frame.</li>
+                    <li><strong>Always-on file path</strong> across the top, so you always know exactly where the shot landed.</li>
+                    <li><strong>Checklist drawer</strong> on the right — the full Checklist (search, tag filters, station tabs, notes, add, drill-to-destination). Collapse it from the top bar or drag its edge to resize.</li>
+                    <li><strong>Thumbnail strip with tagging</strong> docked below the photo (right-click a shot to tag).</li>
+                    <li><strong>Grid overlay</strong> (rule-of-thirds / grid) toggles right in the review bar.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v2.5.0/SHUTR-LAB-2.5.0.dmg"
+                sparkle:edSignature="sCMucvYiW1EQpjAjdqeYMip8IOKwBrARzANGTNQCYo+AeN2mb+ripqgpn+YrYPgRaLYbtsvBkz6S/xyaCPBsDA==" length="5778743"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.4.1</title>
             <pubDate>Sun, 31 May 2026 20:38:11 +0000</pubDate>
             <sparkle:version>27</sparkle:version>
