@@ -6,6 +6,24 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 2.5.3</title>
+            <pubDate>Sat, 06 Jun 2026 22:26:30 +0000</pubDate>
+            <sparkle:version>31</sparkle:version>
+            <sparkle:shortVersionString>2.5.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h3>Critical fix</h3>
+                <ul>
+                    <li><strong>Fixed a double-delete in Fullscreen Review.</strong> Pressing ⌘⌫ to cull a shot in fullscreen could delete the selected photo <strong>and the one next to it</strong>. Deletion now goes through a single code path that removes exactly one photo. Right-click "Delete from Disk…" was unaffected and still asks for confirmation.</li>
+                </ul>
+                <p>If you use Fullscreen Review, please update.</p>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v2.5.3/SHUTR-LAB-2.5.3.dmg"
+                sparkle:edSignature="3nsrNpQpWx0LPvQFovrqeRj3nqAo2vH8h/BXo/5OfDYmIxSahTPdj3gpJQtIP75ZFEj7ZvP86pKAK3j7l/rcCQ==" length="5783830"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.5.2</title>
             <pubDate>Sat, 06 Jun 2026 21:56:12 +0000</pubDate>
             <sparkle:version>30</sparkle:version>
