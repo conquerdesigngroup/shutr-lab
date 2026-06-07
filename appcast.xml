@@ -6,6 +6,30 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 2.6.0</title>
+            <pubDate>Sun, 07 Jun 2026 00:46:14 +0000</pubDate>
+            <sparkle:version>32</sparkle:version>
+            <sparkle:shortVersionString>2.6.0</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h3>New</h3>
+                <ul>
+                    <li><strong>Built-in camera source</strong> — "Use Built-in Camera" (connect screen + Camera menu) runs the full workflow (folders, filename templates, checklist, thumbnails, tagging, fullscreen review) using your Mac's camera when no Canon is connected. Capture-only; nothing to set up.</li>
+                    <li><strong>Soft delete → Archived</strong> — "deleting" a photo now <strong>moves it to a per-job Archived folder</strong> (mirroring the original structure) instead of erasing it, so mistakes are recoverable. Applies to ⌘⌫ and right-click.</li>
+                    <li><strong>Add Group from the checklist</strong> — a new <strong>+ GROUP</strong> button at the top of the checklist adds a routine directly to the day's list (works in fullscreen too).</li>
+                </ul>
+                <h3>Improved</h3>
+                <ul>
+                    <li><strong>Checklist redesign</strong> — Title Case single-line routine names, a status color edge (grey → amber → green), the active routine spotlit with a <strong>NOW</strong> chip, and finished/idle routines folded by default so what's left stands out.</li>
+                    <li><strong>Bigger preview</strong> — the shutter moved to the top bar and the empty exposure strip is gone, giving the preview that vertical space. Secondary toolbar actions are now clean icon buttons.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v2.6.0/SHUTR-LAB-2.6.0.dmg"
+                sparkle:edSignature="t4ypGNJHpZSIJ+EC96qV08tV+JkS6UWUp2USA+zHfKgkfE9nLpQOOek8deY8O8+HbpunY1feweKkdog9oCxnDw==" length="5822583"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.5.3</title>
             <pubDate>Sat, 06 Jun 2026 22:26:30 +0000</pubDate>
             <sparkle:version>31</sparkle:version>
