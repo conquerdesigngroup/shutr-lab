@@ -6,6 +6,36 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 2.8.1</title>
+            <pubDate>Sat, 04 Jul 2026 18:52:43 +0000</pubDate>
+            <sparkle:version>36</sparkle:version>
+            <sparkle:shortVersionString>2.8.1</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h3>Reliability — capture &amp; files</h3>
+                <ul>
+                    <li><strong>All filename tokens now work in tethered capture.</strong> {client}, {time}, and {seq} with any zero-padding render correctly (some previously passed through as literal text). Illegal characters in job/client names are sanitized automatically.</li>
+                    <li><strong>Photos can never silently overwrite each other.</strong> If a filename is already taken — second camera body, re-formatted card, counter wrap — the new frame lands beside it with a “-1” suffix instead of replacing it.</li>
+                    <li><strong>Sequence numbering continues across reconnects and relaunches</strong> instead of restarting at 0001 into folders that already have higher numbers.</li>
+                    <li><strong>RAW+JPEG pairs stay together</strong> — same folder, same sequence number, even if you switch subjects while the RAW is still transferring.</li>
+                    <li><strong>Failed downloads are no longer silent.</strong> You get an error message, half-written files are cleaned up, and the write indicator can no longer get stuck on “stalled”.</li>
+                    <li><strong>Switching jobs re-points captures instantly</strong>, and SHUTR LAB now remembers which job you were on across launches.</li>
+                </ul>
+                <h3>Stability</h3>
+                <ul>
+                    <li>Far fewer false “camera helper hung” restarts during bursts and right after connect.</li>
+                    <li>Job registrations survive file corruption — damaged data is quarantined for recovery, never silently erased.</li>
+                    <li>Roster imports with special characters (e.g. “AVA/MIA DUET”) now create correct folders.</li>
+                    <li>Quick Switcher (⌘L) lists members for INDIVIDUAL-style folders and no longer creates stray empty GROUP folders.</li>
+                    <li>Faster tag-filter badges on big days, cleaner disconnects, and unplugging a Canon no longer interrupts webcam shooting.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v2.8.1/SHUTR-LAB-2.8.1.dmg"
+                sparkle:edSignature="85s6Ah6qXqFFoI2HaU8/Q42tC6emm6p4UuhktT/zICpGb9TwIUIt9VCQ+xlWSmteh0rT5Bnmozp55xxrq/hcCQ==" length="5939743"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.8.0</title>
             <pubDate>Tue, 09 Jun 2026 23:59:47 +0000</pubDate>
             <sparkle:version>35</sparkle:version>
