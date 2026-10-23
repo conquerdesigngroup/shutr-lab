@@ -6,6 +6,26 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 2.8.3</title>
+            <pubDate>Fri, 23 Oct 2026 20:42:25 +0000</pubDate>
+            <sparkle:version>38</sparkle:version>
+            <sparkle:shortVersionString>2.8.3</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h3>Faster RAW previews</h3>
+                <ul>
+                    <li><strong>RAW shots now appear almost instantly</strong> on the client display, the main preview and fullscreen review, including compact RAW (C-RAW). Before, a RAW frame could take up to a minute to show up, or not show up at all during a burst.</li>
+                    <li><strong>SHUTR LAB stays responsive while you shoot RAW.</strong> Previews now load in the background instead of freezing the app.</li>
+                    <li><strong>RAW previews match your camera&#8217;s JPEGs.</strong> SHUTR LAB shows the image your camera rendered (what you see on its screen), so RAW and JPEG shots look the same on the client display.</li>
+                    <li>The 100% loupe in fullscreen review still shows every pixel for focus checks.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v2.8.3/SHUTR-LAB-2.8.3.dmg"
+                sparkle:edSignature="l8/GQ7n1SbrYeG+bYTPkSfU3BsnfWt1Yaos/Jx4CD9MAZPfg2ApJ42+xnVTjm2FXZhjqjsYqmKChjY1KJ9IXCg==" length="5931856"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.8.2</title>
             <pubDate>Mon, 19 Oct 2026 18:31:45 +0000</pubDate>
             <sparkle:version>37</sparkle:version>
