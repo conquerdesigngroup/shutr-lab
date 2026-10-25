@@ -6,6 +6,25 @@
         <description>SHUTR LAB application updates</description>
         <language>en</language>
         <item>
+            <title>Version 2.8.4</title>
+            <pubDate>Sun, 25 Oct 2026 19:29:53 +0000</pubDate>
+            <sparkle:version>39</sparkle:version>
+            <sparkle:shortVersionString>2.8.4</sparkle:shortVersionString>
+            <sparkle:minimumSystemVersion>13.0</sparkle:minimumSystemVersion>
+            <description><![CDATA[
+                <h3>Automatic reconnect &amp; continuous file numbers</h3>
+                <ul>
+                    <li><strong>SHUTR LAB reconnects on its own when the camera drops the connection.</strong> It keeps trying for about 45 seconds and shows &#8220;Reconnecting automatically&#8230;&#8221; meanwhile, so you no longer have to quit and reopen the app mid-shoot. Before, it tried once, too early, and gave up.</li>
+                    <li><strong>File numbers pick up where they left off.</strong> When saving to your Mac, the camera restarts at IMG_0001 every time it reconnects. SHUTR LAB now carries on from the job&#8217;s last number (IMG_0258 &#8594; IMG_0259), so one subject&#8217;s folder no longer ends up with IMG_0001, IMG_0001-1 and IMG_0001-2. If a number is already taken, it moves on to the next free one.</li>
+                    <li><strong>{seq} filenames keep counting after a reconnect</strong>, and filename template changes stick. Before, a reconnect could put both back to how they were when the app was opened.</li>
+                </ul>
+            ]]></description>
+            <enclosure
+                url="https://github.com/conquerdesigngroup/shutr-lab/releases/download/v2.8.4/SHUTR-LAB-2.8.4.dmg"
+                sparkle:edSignature="1Tc+j+RjFN/Lw8A/bG+nucTQGxlEOsEsyFBqVs0Xgqna+dSo0VJUupnXdDuozhC3SfDEsn/Ccy3AdOiui8cjCA==" length="5954942"
+                type="application/octet-stream" />
+        </item>
+        <item>
             <title>Version 2.8.3</title>
             <pubDate>Fri, 23 Oct 2026 20:42:25 +0000</pubDate>
             <sparkle:version>38</sparkle:version>
